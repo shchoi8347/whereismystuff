@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Where Is My Stuff?</title>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&family=Syne:wght@400;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <div class="container">
+    <header>
+      <h1>Where is my <span>stuff?</span></h1>
+      <p>// your personal inventory — saved locally in the browser</p>
+    </header>
+
+    <div class="form-card">
+      <div class="form-row">
+        <div class="field">
+          <label for="thing">Thing</label>
+          <input id="thing" type="text" placeholder="e.g. Christmas lights" autocomplete="off" />
+        </div>
+        <div class="field">
+          <label for="place">Place</label>
+          <input id="place" type="text" placeholder="e.g. Garage box #3" autocomplete="off" />
+        </div>
+        <button id="btn-add">+ Add</button>
+      </div>
+    </div>
+
+    <div class="search-wrap">
+      <span class="search-icon">🔍</span>
+      <input id="search" type="text" placeholder="Search your stuff..." />
+    </div>
+
+    <div class="stats" id="stats"></div>
+    <div id="list"></div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
