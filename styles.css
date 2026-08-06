@@ -1,7 +1,8 @@
 :root {
   --bg: #f7f4ea;
-  --surface: #ffffff;
-  --border: #d8d2c5;
+  --surface: #f2efe9;
+  --border: #d9d6cf;
+  --input-bg: #e8e5df;
   --accent: #f5c542;
   --accent2: #e07b3f;
   --text: #1f1c16;
@@ -72,7 +73,7 @@ label {
 }
 
 input {
-  background: var(--bg);
+  background: var(--input-bg);
   border: 1px solid var(--border);
   border-radius: 8px;
   padding: 0.65rem 0.9rem;
@@ -80,7 +81,7 @@ input {
   font-family: 'Syne', sans-serif;
   font-size: 0.95rem;
   outline: none;
-  transition: border-color 0.2s;
+  transition: border-color 0.2s, background 0.2s;
 }
 
 input:focus { border-color: var(--accent); }
